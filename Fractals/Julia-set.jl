@@ -20,4 +20,4 @@ for i in -1.5:0.005:1.5
     end
 end
 theme(:dark)
-heatmap(abst, c = :roma, legend = false, border=:none)
+heatmap(abst, c = :thermal, legend = false, border=:none)
