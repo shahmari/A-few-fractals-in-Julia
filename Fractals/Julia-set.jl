@@ -10,9 +10,9 @@ for i in -1.5:0.005:1.5
     for j in -1.5:0.005:1.5
         jnum += 1
         z = complex(i,j)
-        for n in 1:13
+        for n in 1:8
             z = (z^2) + c
-            if abs(z) > 1000
+            if abs(z) > 1.5
                 abst[inum,jnum] = abs(z)
                 break
             end
@@ -20,4 +20,4 @@ for i in -1.5:0.005:1.5
     end
 end
 theme(:dark)
-heatmap(abst, c = :thermal, legend = false, border=:none)
+heatmap(abst, c = :roma, legend = false, border=:none)
