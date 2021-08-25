@@ -18,7 +18,7 @@ for i in 1:8
     lasttringles = appendTringles
 end
 
-plot(hcat(backtrg...)[1,:], hcat(backtrg...)[2,:], legend = false)
+plot(hcat(backtrg...)[1,:], hcat(backtrg...)[2,:], legend = false, border=:none)
 
 for points in lasttringles
     plot!(hcat(points...)[1,:], hcat(points...)[2,:], legend = false, fill = (0, 0.5, :green))

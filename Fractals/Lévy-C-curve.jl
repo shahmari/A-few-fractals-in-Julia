@@ -17,4 +17,5 @@ for num in 1:16
         i += 2
     end
 end
-plot(hcat(points...)[1,:], hcat(points...)[2,:], legend = false)
+theme(:dark)
+plot(hcat(points...)[1,:], hcat(points...)[2,:], legend = false, border=:none, color =:white, linewidth=0.2)

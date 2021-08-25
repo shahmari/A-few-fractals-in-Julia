@@ -17,4 +17,8 @@ for num in 1:16
         i += 2
     end
 end
-plot(hcat(points...)[1,:], hcat(points...)[2,:], legend = false)
+
+half = Int(floor(length(points)/2))
+
+plot(hcat(points...)[1,1:half], hcat(points...)[2,1:half], legend = false, color =:blue, border=:none)
+plot!(hcat(points...)[1,half:end], hcat(points...)[2,half:end], legend = false, color =:red, border=:none)

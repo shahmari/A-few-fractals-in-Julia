@@ -15,4 +15,4 @@ for n in 1:num
     end
 end
 
-plot(hcat(points...)[1,:], hcat(points...)[2,:], legend = false)
+plot(hcat(points...)[1,:], hcat(points...)[2,:], legend = false, border=:none, fill =(0))

@@ -16,4 +16,4 @@ for i in 1:num
     push!(y, point[2])
 end
 
-scatter(x,y,markersize = 0.0001, legend = false)
+scatter(x,y,markersize = 0.0001, legend = false, border=:none)
