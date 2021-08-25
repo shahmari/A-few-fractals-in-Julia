@@ -30,4 +30,4 @@ for i in 1:order
         end
     end
 end
-scatter(x,y,markersize = 0.000001)
+scatter(x,y,markersize = 0.000001, legend = false)
