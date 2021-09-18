@@ -18,9 +18,10 @@ for i in 1:8
     lasttringles = appendTringles
 end
 
-plot(hcat(backtrg...)[1,:], hcat(backtrg...)[2,:], legend = false, border=:none)
+plot(hcat(backtrg...)[1,:], hcat(backtrg...)[2,:], legend = false, border=:none, dpi = 500)
 
 for points in lasttringles
-    plot!(hcat(points...)[1,:], hcat(points...)[2,:], legend = false, fill = (0, 0.5, :green))
+    plot!(hcat(points...)[1,:], hcat(points...)[2,:], legend = false, fill = (0, 0.5, :green), dpi = 500)
 end
-plot!()
+plot!(dpi = 500)
+savefig("C:\\Users\\Yaghoub\\Documents\\GitHub\\A-few-fractals-in-Julia\\Fractals-Fig\\ST.png")
