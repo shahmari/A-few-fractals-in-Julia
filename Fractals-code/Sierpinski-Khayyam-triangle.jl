@@ -30,4 +30,5 @@ for i in 1:order
         end
     end
 end
-scatter(x,y,markersize = 0.000001, legend = false, border=:none)
+scatter(x,y,markersize = 0.000001, legend = false, border=:none, dpi=300)
+savefig("C:\\Users\\Yaghoub\\Documents\\GitHub\\A-few-fractals-in-Julia\\Fractals-Fig\\SKT.png")
