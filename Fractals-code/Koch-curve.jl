@@ -23,12 +23,15 @@ StartPoints = [[[0.0; 0.0],[10.0; 0.0]],
                 ]
 Adegs = [pi/3, pi/3, -pi/3, 2*pi/3,]
 
+ylimlist = [(0,5), (0,10),(-3,9), (0,10)]
+xlimlist = [(0,10), (0,10),(-1,11), (0,10)]
+
 for i in 1:4
     Parameters = Dict(
                 :points => StartPoints[i],
                 :order => 5,
                 :θ => Adegs[i])
     points = KochCurve(;Parameters...)
-    plot(hcat(points...)[1,:], hcat(points...)[2,:], legend = false, border=:none, fill =(0))
+    plot(hcat(points...)[1,:], hcat(points...)[2,:], legend = false, border=:none, fill =(0), ylims = ylimlist[i], xlims = xlimlist[i])
     savefig("C:\\Users\\Yaghoub\\Documents\\GitHub\\A-few-fractals-in-Julia\\Fractals-Fig\\KochCurve$i.png")
 end
